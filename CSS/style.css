@@ -1,0 +1,243 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin:10px 34px
+}
+
+#logo img{
+    height: 40px;
+    margin: 3px 6px;
+    /* border: 1px solid black; */
+    /* border-radius: 100px; */
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+    height: 50px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Mitr', sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(/img/bg.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    /* font-family: 'Philosopher', sans-serif; */
+}
+
+/* Services section */
+#blog{
+    margin: 34px;
+    display: flex;
+}
+#blog .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(239, 240, 245);
+    /* height: 400px; */
+    font-family: 'Biryani', sans-serif;
+    text-align: justify;
+}
+.box h2{
+    font-size: 30px;
+}
+#blog .box img{
+    height: 150px;
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(75, 194, 194);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    text-shadow: 12px 10px 40px rgb(255, 255, 255);
+    margin-top: 120px;
+    font-family: 'Biryani', sans-serif;
+}
+
+/* .services-container hr{
+    width: 800px;
+    display: block;
+    margin: auto;
+} */
+
+#client-section{
+    height: 344px;
+    font-family: 'Biryani', sans-serif;
+}
+#client-section .h-primary{
+    text-align: center;
+    padding: 30px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url(/img/bg2.jpg);
+    width: 100%;
+    height:18%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 150px;
+    padding: 34px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* Contact Section */
+
+#contact h1{
+    text-shadow: 6px 2px 3px black;
+}
+#contact{
+    color: white;
+    text-shadow: 6px 2px 3px black;
+    padding: 5px;
+    position: relative;
+    font-family: 'Biryani', sans-serif;
+    background: url(https://images.unsplash.com/photo-1590273466070-40c466b4432d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Z3JlZW4lMjBuYXR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+    background-position-x: 1px 100px;
+    /* background: rgb(232, 255, 250); */
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(/img/bg2.jpg);
+}
+
+footer{
+    background: #6a6c6d;
+    color: white;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
